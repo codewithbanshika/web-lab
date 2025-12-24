@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Calculator</title>
+</head>
+<body style="background-color: lightblue; font-family: Arial; text-align: center;">
+
+    <h2>Simple Button Calculator</h2>
+
+    <!-- Input Boxes -->
+    <input id="num1" type="number" placeholder="First number" style="margin: 5px;">
+    <input id="num2" type="number" placeholder="Second number" style="margin: 5px;">
+    <br><br>
+
+    <!-- Buttons -->
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+
+    <h3>Result: <span id="ans">0</span></h3>
+
+    <script>
+        function add() {
+            var a = Number(document.getElementById("num1").value);
+            var b = Number(document.getElementById("num2").value);
+            document.getElementById("ans").innerHTML = a + b;
+        }
+
+        function sub() {
+            var a = Number(document.getElementById("num1").value);
+            var b = Number(document.getElementById("num2").value);
+            document.getElementById("ans").innerHTML = a - b;
+        }
+
+        function mul() {
+            var a = Number(document.getElementById("num1").value);
+            var b = Number(document.getElementById("num2").value);
+            document.getElementById("ans").innerHTML = a * b;
+        }
+
+        function div() {
+            var a = Number(document.getElementById("num1").value);
+            var b = Number(document.getElementById("num2").value);
+            document.getElementById("ans").innerHTML = a / b;
+        }
+    </script>
+
+</body>
+</html>
